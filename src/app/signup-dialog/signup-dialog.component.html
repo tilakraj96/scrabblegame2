@@ -1,0 +1,36 @@
+
+<div>
+    <mat-form-field floatLabel="auto" appearance="outline" color="accent">
+    <mat-label >Username</mat-label>
+    <input id="supUsername" type="text" name="username"  matInput required mat-hint="Minimum 8 characters">
+    </mat-form-field>
+</div>
+  
+  <div>
+  <mat-form-field floatLabel="auto" appearance="outline" color="warn">
+      <mat-label>Password</mat-label>
+      <input id="supPassword" type="password" matInput required hint="Should contain letters and digits">
+    </mat-form-field>
+  </div>
+
+  <div>
+     <mat-form-field floatLabel="auto" appearance="outline" color="warn">
+         <mat-label>Email</mat-label>
+         <input id="supEmail" type="email" matInput required >
+      </mat-form-field>
+  </div>
+
+  <div>
+      <mat-form-field floatLabel="auto" appearance="outline" color="warn">
+          <mat-label>Date Of Birth</mat-label>
+          <input id="supDOB" type="date" matInput required hint="Should contain letters and digits">
+      </mat-form-field>
+  </div>
+
+
+  
+  <div>
+    <button id="signup" color="accent" (click)=onSubmit(employeeForm) mat-raised-button>Register !</button>
+    
+    <button id="cancel" mat-stroked-button>Cancel</button>
+  </div> 

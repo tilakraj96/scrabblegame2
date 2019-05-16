@@ -1,0 +1,135 @@
+<a routerLink="/Login" href="#"  style="margin-left: 25px;font-size: 25px">Back To Login</a>
+<div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-content white-text">
+        <div class="row">
+          <div class="col s3">
+            <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)"  class="form">
+              <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="employeeService.selectedEmployee._id">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="username" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.username"  required>
+                  <label>UserName :
+                    <label class="red-text">*</label>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="password" name="password" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.password" >
+                  <label>Password :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="email" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.email" >
+                  <label>Email :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="dateofbirth" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.dateofbirth" >
+                  <label>DateOFBirth :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="number" name="passcode" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.passcode">
+                  <label>Passcode :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="number" name="score" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.score" >
+                  <label>Score :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" name="status" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.status" >
+                  <label>Status :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn btn-custom right" type="button" (click)="resetForm(employeeForm)">Reset</button>
+                  <button class="btn btn-custom right" type="submit" [disabled]="!employeeForm.valid">Submit</button>
+                </div>
+              </div>
+            </form> 
+          </div>
+          <div class="col s9">
+              <table class="responsive-table highlight">
+                  <thead>
+                    <tr>
+                      <th>UserName</th>
+                      <th>Password</th>
+                      <th>Email</th>
+                      <th>DateOfBirth</th>
+                      <th>Passcode</th>
+                      <th>Score</th>
+                      <th>Status</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tr *ngFor="let emp of employeeService.employees">
+                    <td>{{emp.username}}</td>
+                    <td>{{emp.password}}</td>
+                    <td>{{emp.email}}</td>
+                    <td>{{emp.dateofbirth}}</td>
+                    <td>{{emp.passcode}}</td>
+                    <td>{{emp.score}}</td>
+                    <td>{{emp.status}}</td>
+                    <td>
+                        <a class="action-btn" (click)="onEdit(emp)">
+                          <i class="material-icons">edit</i>
+                        </a>
+                        <a class="action-btn" (click)="onDelete(emp._id,employeeForm)">
+                          <i class="material-icons">delete</i>
+                        </a>
+                      </td>
+                  </tr>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="col-md-4">
+    <h2>Database Details</h2>
+    <h6 style="text-align:right;color:dimgrey;font-size:small"></h6>
+
+    <table class="responsive-table highlight">
+        <thead>
+          <tr>
+            <th>UserName</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>DateOfBirth</th>
+            <th>Passcode</th>
+            <th>Score</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tr *ngFor="let emp of employeeService.employees">
+          <td>{{emp.username}}</td>
+          <td>{{emp.password}}</td>
+          <td>{{emp.email}}</td>
+          <td>{{emp.dateofbirth}}</td>
+          <td>{{emp.passcode}}</td>
+          <td>{{emp.score}}</td>
+          <td>
+              <a class="action-btn" (click)="onEdit(emp)">
+                <i class="material-icons">edit</i>
+              </a>
+              <a class="action-btn" (click)="onDelete(emp._id,employeeForm)">
+                <i class="material-icons">delete</i>
+              </a>
+            </td>
+        </tr>
+      </table>
+   </div> -->

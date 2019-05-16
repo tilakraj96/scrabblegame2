@@ -1,0 +1,15 @@
+ <h2>word list</h2>
+    <div>
+        <mat-button-toggle  (click)="findWords(A.id)" id="A" >
+            <ng-container>
+            
+                    <label #A id="a">
+            
+                    </label>
+                
+            </ng-container>
+        </mat-button-toggle>
+        
+    </div>
+<input type="text" [(value)]="text1" #name name="name" (keyup)="updateText(name.value)">
+<p>{{find1}}</p>

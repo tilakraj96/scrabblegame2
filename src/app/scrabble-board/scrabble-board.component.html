@@ -1,0 +1,1486 @@
+<!-- Enter a value <input type="text" #tbName id="tbName">
+    <p>
+        <mat-button-toggle type="submit" (click)="changeLabelName(lblName.id, tbName.value)" id="bt" >
+            <ng-container>
+                <p>
+                    <label #lblName id="lblName">
+            
+                    </label>
+                </p>
+            </ng-container>
+        </mat-button-toggle>
+    </p> -->
+    
+    <!-- <ng-container>
+        <p>
+            <label #lblName id="lblName">
+    
+            </label>
+        </p>
+    </ng-container> -->
+<html>    
+    
+<div id="full" >
+<mat-card id="main-card">
+  <mat-card-title id="title">
+    SCRABBLE
+  </mat-card-title>
+   <!-- <mat-button-toggle type="submit" (click)="currentWord(A.id)" id="A" >
+        <ng-container>
+        
+                <label #A id="a">
+        
+                </label>
+            
+        </ng-container>
+    </mat-button-toggle>  -->
+<div id="row1" >
+    <mat-button-toggle type="submit" (click)="setLetter(A1.id,1)" id="A1" style="background-color:rgb(219, 58, 58)">
+        <ng-container>
+        
+                <label #A1 id="a1">
+        
+                </label>
+            
+        </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A2.id)" id="A2" >
+            <ng-container>
+            
+                    <label #A2 id="a2">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A3.id)" id="A3" >
+            <ng-container>
+            
+                    <label #A3 id="a3">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A4.id)" id="A4" >
+            <ng-container>
+            
+                    <label #A4 id="a4">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A5.id,4)" id="A5" style="background-color:springgreen">
+            <ng-container>
+            
+                    <label #A5 id="a5">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A6.id)" id="A6" >
+            <ng-container>
+            
+                    <label #A6 id="a6">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A7.id)" id="A7" >
+            <ng-container>
+            
+                    <label #A7 id="a7">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A8.id,2)" id="A8" style="background-color:skyblue">
+            <ng-container>
+            
+                    <label #A8 id="a8">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A9.id)" id="A9" >
+            <ng-container>
+            
+                    <label #A9 id="a9">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A10.id)" id="A10" >
+            <ng-container>
+            
+                    <label #A10 id="a10">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A11.id)" id="A11" >
+            <ng-container>
+            
+                    <label #A11 id="a11">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(A12.id,1)" id="A12" style="background-color:rgb(219, 58, 58)" >
+            <ng-container>
+            
+                    <label #A12 id="a12">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+</div>
+
+<div id="row2">
+
+    <mat-button-toggle type="submit" (click)="setLetter(B1.id)" id="B1" >
+            <ng-container>
+                
+                    <label #B1 id="b1">
+                
+                    </label>
+                    
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B2.id,4)" id="B2" style="background-color:springgreen" >
+            <ng-container>
+            
+                    <label #B2 id="b2">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B3.id)" id="B3" >
+            <ng-container>
+            
+                    <label #B3 id="b3">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B4.id)" id="B4" >
+            <ng-container>
+            
+                    <label #B4 id="b4">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B5.id)" id="B5" >
+            <ng-container>
+            
+                    <label #B5 id="b5">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B6.id,3)" id="B6" style="background-color:rgb(30, 97, 124)">
+            <ng-container>
+            
+                    <label #B6 id="b6">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B7.id,1)" id="B7" style="background-color:rgb(219, 58, 58)">
+            <ng-container>
+            
+                    <label #B7 id="b7">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B8.id)" id="B8" >
+            <ng-container>
+            
+                    <label #B8 id="b8">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B9.id)" id="B9" >
+            <ng-container>
+            
+                    <label #B9 id="b9">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B10.id)" id="B10" >
+            <ng-container>
+            
+                    <label #B10 id="b10">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B11.id,4)" id="B11" style="background-color:springgreen">
+            <ng-container>
+            
+                    <label #B11 id="b11">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(B12.id)" id="B12" >
+            <ng-container>
+            
+                    <label #B12 id="b12">
+            
+                    </label>
+                
+            </ng-container>
+    </mat-button-toggle>
+ </div>
+ <div id="row3">
+        <mat-button-toggle type="submit" (click)="setLetter(C1.id)" id="C1" >
+                <ng-container>
+                
+                        <label #C1 id="c1">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C2.id)" id="C2" >
+                <ng-container>
+                
+                        <label #C2 id="c2">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C3.id,4)" id="C3" style="background-color:springgreen">
+                <ng-container>
+                
+                        <label #C3 id="c3">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C4.id)" id="C4" >
+                <ng-container>
+                
+                        <label #C4 id="c4">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C5.id)" id="C5" >
+                <ng-container>
+                
+                        <label #C5 id="c5">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C6.id)" id="C6" >
+                <ng-container>
+                
+                        <label #C6 id="c6">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C7.id)" id="C7" >
+                <ng-container>
+                
+                        <label #C7 id="c7">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C8.id)" id="C8" >
+                <ng-container>
+                
+                        <label #C8 id="c8">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C9.id)" id="C9" >
+                <ng-container>
+                
+                        <label #C9 id="c9">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C10.id,4)" id="C10" style="background-color:springgreen">
+                <ng-container>
+                
+                        <label #C10 id="c10">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C11.id)" id="C11" >
+                <ng-container>
+                
+                        <label #C11 id="c11">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(C12.id)" id="C12" >
+                <ng-container>
+                
+                        <label #C12 id="c12">
+                
+                        </label>
+                    
+                </ng-container>
+        </mat-button-toggle>
+ </div>
+ <div id="row4">
+    <mat-button-toggle type="submit" (click)="setLetter(D1.id)" id="D1" >
+            <ng-container>                
+                        <label #D1 id="d1">
+            
+                    </label>
+                    
+            </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(D2.id)" id="D2" >
+    <ng-container>
+        
+           <label #D2 id="d2">
+        
+            </label>
+            
+    </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(D3.id)" id="D3" >
+    <ng-container>
+    
+            <label #D3 id="d3">
+    
+            </label>
+        
+    </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(D4.id,2)" id="D4" style="background-color:skyblue">
+<ng-container>
+
+        <label #D4 id="d4">
+
+        </label>
+    
+</ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(D5.id)" id="D5" >
+<ng-container>
+
+        <label #D5 id="d5">
+
+        </label>
+    
+</ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(D6.id)" id="D6" >
+<ng-container>
+
+        <label #D6 id="d6">
+
+        </label>
+    
+</ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(D7.id)" id="D7" >
+<ng-container>
+
+        <label #D7 id="d7">
+
+        </label>
+    
+</ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(D8.id)" id="D8" >
+<ng-container>
+
+        <label #D8 id="d8">
+
+        </label>
+    
+</ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(D9.id,2)" id="D9" style="background-color:skyblue">
+<ng-container>
+
+        <label #D9 id="d9">
+
+        </label>
+    
+</ng-container>
+</mat-button-toggle>
+  <mat-button-toggle type="submit" (click)="setLetter(D10.id)" id="D10" >
+        <ng-container>
+        
+                <label #D10 id="d10">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+  <mat-button-toggle type="submit" (click)="setLetter(D11.id)" id="D11" >
+        <ng-container>
+        
+                <label #D11 id="d11">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+  <mat-button-toggle type="submit" (click)="setLetter(D12.id)" id="D12" >
+        <ng-container>
+        
+                <label #D12 id="d12">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+ </div>
+ <div id="row5">
+    <mat-button-toggle type="submit" (click)="setLetter(E1.id,2)" id="E1" style="background-color: skyblue">
+        <ng-container>
+        
+                <label #E1 id="e1">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E2.id)" id="E2" >
+        <ng-container>
+        
+                <label #E2 id="e2">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E3.id)" id="E3" >
+        <ng-container>
+        
+                <label #E3 id="e3">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E4.id)" id="E4" >
+        <ng-container>
+        
+                <label #E4 id="e4">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E5.id,3)" id="E5" style="background-color:rgb(30, 97, 124)">
+        <ng-container>
+        
+                <label #E5 id="e5">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E6.id)" id="E6" >
+        <ng-container>
+        
+                <label #E6 id="e6">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E7.id)" id="E7" >
+        <ng-container>
+        
+                <label #E7 id="e7">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E8.id,3)" id="E8" style="background-color:rgb(30, 97, 124)">
+        <ng-container>
+        
+                <label #E8 id="e8">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E9.id)" id="E9" >
+        <ng-container>
+        
+                <label #E9 id="e9">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E10.id)" id="E10" >
+        <ng-container>
+        
+                <label #E10 id="e10">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E11.id)" id="E11" >
+        <ng-container>
+        
+                <label #E11 id="e11">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(E12.id,4)" id="E12" style="background-color:springgreen">
+        <ng-container>
+        
+                <label #E12 id="e12">
+        
+                </label>
+            
+        </ng-container>
+</mat-button-toggle>
+ </div>
+ <div id="row6">
+ <mat-button-toggle type="submit" (click)="setLetter(F1.id)" id="F1" >
+           <ng-container>
+                
+                    <label #F1 id="f1">
+                
+                    </label>
+                    
+            </ng-container>
+  </mat-button-toggle>
+  <mat-button-toggle type="submit" (click)="setLetter(F2.id,1)" id="F2" style="background-color:rgb(219, 58, 58)">
+        <ng-container>
+             
+                 <label #F2 id="f2">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F3.id)" id="F3" >
+        <ng-container>
+             
+                 <label #F3 id="f3">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F4.id)" id="F4" >
+        <ng-container>
+             
+                 <label #F4 id="f4">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F5.id)" id="F5" >
+        <ng-container>
+             
+                 <label #F5 id="f5">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F6.id,5)" id="F6" style="background-color:sandybrown" >
+        <ng-container>
+             
+                 <label #F6 id="f6">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F7.id,5)" id="F7" style="background-color:sandybrown" >
+        <ng-container>
+             
+                 <label #F7 id="f7">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F8.id)" id="F8" >
+        <ng-container>
+             
+                 <label #F8 id="f8">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F9.id)" id="F9" >
+        <ng-container>
+             
+                 <label #F9 id="f9">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F10.id)" id="F10" >
+        <ng-container>
+             
+                 <label #F10 id="f10">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F11.id,3)" id="F11" style="background-color:rgb(30, 97, 124)">
+        <ng-container>
+             
+                 <label #F11 id="f11">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(F12.id)" id="F12" >
+        <ng-container>
+             
+                 <label #F12 id="f12">
+             
+                 </label>
+                 
+         </ng-container>
+</mat-button-toggle>
+ </div>
+ <div id="row7">
+<mat-button-toggle type="submit" (click)="setLetter(G1.id)" id="G1" >
+        <ng-container>
+                     
+                 <label #G1 id="g1">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G2.id,3)" id="G2" style="background-color:rgb(30, 97, 124)">
+        <ng-container>
+                     
+                 <label #G2 id="g2">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G3.id)" id="G3" >
+        <ng-container>
+                     
+                 <label #G3 id="g3">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G4.id)" id="G4" >
+        <ng-container>
+                     
+                 <label #G4 id="g4">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G5.id)" id="G5" >
+        <ng-container>
+                     
+                 <label #G5 id="g5">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G6.id,5)" id="G6" style="background-color:sandybrown">
+        <ng-container>
+                     
+                 <label #G6 id="g6">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G7.id,5)" id="G7" style="background-color:sandybrown">
+        <ng-container>
+                     
+                 <label #G7 id="g7">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G8.id)" id="G8" >
+        <ng-container>
+                     
+                 <label #G8 id="g8">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G9.id)" id="G9" >
+        <ng-container>
+                     
+                 <label #G9 id="g9">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G10.id)" id="G10" >
+        <ng-container>
+                     
+                 <label #G10 id="g10">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G11.id,1)" id="G11" style="background-color:rgb(219, 58, 58)">
+        <ng-container>
+                     
+                 <label #G11 id="g11">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(G12.id)" id="G12" >
+        <ng-container>
+                     
+                 <label #G12 id="g12">
+                     
+                 </label>
+                         
+         </ng-container>
+</mat-button-toggle>
+ </div>
+ <div id="row8">
+<mat-button-toggle type="submit" (click)="setLetter(H1.id,4)" id="H1" style="background-color:springgreen">
+    <ng-container>
+                             
+            <label #H1 id="h1">
+                             
+         </label>
+                                 
+         </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(H2.id)" id="H2" >
+        <ng-container>
+                                 
+                <label #H2 id="h2">
+                                 
+             </label>
+                                     
+             </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(H3.id)" id="H3" >
+            <ng-container>
+                                     
+                    <label #H3 id="h3">
+                                     
+                 </label>
+                                         
+                 </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(H4.id)" id="H4" >
+        <ng-container>
+                                         
+                <label #H4 id="h4">
+                                         
+             </label>
+                                             
+             </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(H5.id,3)" id="H5" style="background-color:rgb(30, 97, 124)">
+            <ng-container>
+                                     
+                    <label #H5 id="h5">
+                                     
+                 </label>
+                                         
+                 </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(H6.id)" id="H6" >
+                <ng-container>
+                                         
+                        <label #H6 id="h6">
+                                         
+                     </label>
+                                             
+                     </ng-container>
+            </mat-button-toggle>
+            <mat-button-toggle type="submit" (click)="setLetter(H7.id)" id="H7" >
+                    <ng-container>
+                                             
+                            <label #H7 id="h7">
+                                             
+                         </label>
+                                                 
+                         </ng-container>
+                </mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(H8.id,3)" id="H8" style="background-color:rgb(30, 97, 124)">
+    <ng-container>
+                                                 
+        <label #H8 id="h8">
+                                                 
+        </label>
+                                                     
+    </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(H9.id)" id="H9" >
+        <ng-container>
+                                 
+                <label #H9 id="h9">
+                                 
+             </label>
+                                     
+             </ng-container>
+    </mat-button-toggle>
+    <mat-button-toggle type="submit" (click)="setLetter(H10.id)" id="H10" >
+            <ng-container>
+                                     
+                    <label #H10 id="h10">
+                                     
+                 </label>
+                                         
+                 </ng-container>
+        </mat-button-toggle>
+        <mat-button-toggle type="submit" (click)="setLetter(H11.id)" id="H11" >
+                <ng-container>
+                                         
+                        <label #H11 id="h11">
+                                         
+                     </label>
+                                             
+                     </ng-container>
+            </mat-button-toggle>
+            <mat-button-toggle type="submit" (click)="setLetter(H12.id,2)" id="H12" style="background-color:skyblue">
+                    <ng-container>
+                                             
+                            <label #H12 id="h12">
+                                             
+                         </label>
+                                                 
+                         </ng-container>
+                </mat-button-toggle>
+ </div>
+ <div id="row9">
+<mat-button-toggle type="submit" (click)="setLetter(I1.id)" id="I1" >
+        <ng-container>
+                                         
+               <label #I1 id="i1">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I2.id)" id="I2" >
+        <ng-container>
+                                         
+               <label #I2 id="i2">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I3.id)" id="I3" >
+        <ng-container>
+                                         
+               <label #I3 id="i3">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I4.id,2)" id="I4" style="background-color:skyblue">
+        <ng-container>
+                                         
+               <label #I4 id="i4">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I5.id)" id="I5" >
+        <ng-container>
+                                         
+               <label #I5 id="i5">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I6.id)" id="I6" >
+        <ng-container>
+                                         
+               <label #I6 id="i6">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I7.id)" id="I7" >
+        <ng-container>
+                                         
+               <label #I7 id="i7">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I8.id)" id="I8" >
+        <ng-container>
+                                         
+               <label #I8 id="i8">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I9.id,2)" id="I9" style="background-color:skyblue">
+        <ng-container>
+                                         
+               <label #I9 id="i9">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I10.id)" id="I10" >
+        <ng-container>
+                                         
+               <label #I10 id="i10">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I11.id)" id="I11" >
+        <ng-container>
+                                         
+               <label #I11 id="i11">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(I12.id)" id="I12" >
+        <ng-container>
+                                         
+               <label #I12 id="i12">
+                                         
+             </label>
+                                             
+        </ng-container>
+</mat-button-toggle>
+ </div>
+ <div id="row10">
+<mat-button-toggle type="submit" (click)="setLetter(J1.id)" id="J1" >
+        <ng-container>
+                                                 
+                <label #J1 id="j1">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J2.id)" id="J2" >
+        <ng-container>
+                                                 
+                <label #J2 id="j2">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J3.id,4)" id="J3" style="background-color:springgreen">
+        <ng-container>
+                                                 
+                <label #J3 id="j3">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J4.id)" id="J4" >
+        <ng-container>
+                                                 
+                <label #J4 id="j4">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J5.id)" id="J5" >
+        <ng-container>
+                                                 
+                <label #J5 id="j5">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J6.id)" id="J6" >
+        <ng-container>
+                                                 
+                <label #J6 id="j6">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J7.id)" id="J7" >
+        <ng-container>
+                                                 
+                <label #J7 id="j7">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J8.id)" id="J8" >
+        <ng-container>
+                                                 
+                <label #J8 id="j8">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J9.id)" id="J9" >
+        <ng-container>
+                                                 
+                <label #J9 id="j9">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J10.id,4)" id="J10" style="background-color:springgreen">
+        <ng-container>
+                                                 
+                <label #J10 id="j10">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J11.id)" id="J11" >
+        <ng-container>
+                                                 
+                <label #J11 id="j11">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(J12.id)" id="J12" >
+        <ng-container>
+                                                 
+                <label #J12 id="j12">
+                                                 
+                </label>
+                                                     
+        </ng-container>
+</mat-button-toggle>
+ </div>
+ <div id="row11">
+<mat-button-toggle type="submit" (click)="setLetter(K1.id)" id="K1" >
+        <ng-container>
+                                                 
+                <label #K1 id="k1">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K2.id,4)" id="K2" style="background-color:springgreen">
+        <ng-container>
+                                                 
+                <label #K2 id="k2">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K3.id)" id="K3" >
+        <ng-container>
+                                                 
+                <label #K3 id="k3">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K4.id)" id="K4" >
+        <ng-container>
+                                                 
+                <label #K4 id="k4">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K5.id)" id="K5" >
+        <ng-container>
+                                                 
+                <label #K5 id="k5">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K6.id,1)" id="K6" style="background-color:rgb(219, 58, 58)">
+        <ng-container>
+                                                 
+                <label #K6 id="k6">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K7.id,3)" id="K7" style="background-color:rgb(30, 97, 124)">
+        <ng-container>
+                                                 
+                <label #K7 id="k7">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K8.id)" id="K8" >
+        <ng-container>
+                                                 
+                <label #K8 id="k8">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K9.id)" id="K9" >
+        <ng-container>
+                                                 
+                <label #K9 id="k9">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K10.id)" id="K10" >
+        <ng-container>
+                                                 
+                <label #K10 id="k10">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K11.id,4)" id="K11" style="background-color:springgreen">
+        <ng-container>
+                                                 
+                <label #K11 id="k11">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(K12.id)" id="K12" >
+        <ng-container>
+                                                 
+                <label #K12 id="k12">
+                                                         
+                </label>
+                                                             
+        </ng-container>
+</mat-button-toggle>
+ </div>
+ <div id="row12">
+<mat-button-toggle type="submit" (click)="setLetter(L1.id,1)" id="L1" style="background-color:rgb(219, 58, 58)" >
+        <ng-container>
+                                                         
+                <label #L1 id="l1">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L2.id)" id="L2" >
+        <ng-container>
+                                                         
+                <label #L2 id="l2">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L3.id)" id="L3" >
+        <ng-container>
+                                                         
+                <label #L3 id="l3">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L4.id)" id="L4" >
+        <ng-container>
+                                                         
+                <label #L4 id="l4">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L5.id,2)" id="L5" style="background-color:skyblue">
+        <ng-container>
+                                                         
+                <label #L5 id="l5">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L6.id)" id="L6" >
+        <ng-container>
+                                                         
+                <label #L6 id="l6">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L7.id)" id="L7" >
+        <ng-container>
+                                                         
+                <label #L7 id="l7">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L8.id,4)" id="L8" style="background-color:springgreen">
+        <ng-container>
+                                                         
+                <label #L8 id="l8">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L9.id)" id="L9" >
+        <ng-container>
+                                                         
+                <label #L9 id="l9">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L10.id)" id="L10" >
+        <ng-container>
+                                                         
+                <label #L10 id="l10">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L11.id)" id="L11" >
+        <ng-container>
+                                                         
+                <label #L11 id="l11">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+</mat-button-toggle>
+<mat-button-toggle type="submit" (click)="setLetter(L12.id,1)" id="L12" style="background-color:rgb(219, 58, 58)">
+        <ng-container>
+                                                         
+                <label #L12 id="l12">
+                                                                 
+                </label>
+                                                                     
+        </ng-container>
+       
+</mat-button-toggle>
+</div>
+</mat-card>
+</div>
+
+<mat-card id="score" >Game Profile 
+  <mat-card style="background-color:rgba(176, 190, 197, 0.726);">
+        Timer    {{timerleft}}
+  </mat-card>
+
+  <mat-card style="background-color:rgba(84, 146, 177, 0.726);">        
+    <mat-card-title id="player1">Player 1: {{score1}}</mat-card-title>
+    <p id="tl1">Time Left:{{timeLeft1}}</p>
+  </mat-card>
+  
+  
+  
+  <mat-card style="background-color:rgba(84, 146, 177, 0.726);">
+    <mat-card-title id="player2">Player 2: {{score2}}</mat-card-title>
+    <p id="tl2">Time Left:{{timeLeft2}}</p>
+  </mat-card>
+
+ <mat-card style="background-color:rgba(36, 140, 167, 0.726);"> 
+   <mat-card-title id="letters">Your letters !</mat-card-title>
+   
+    <button type="submit" (click)="randomText1(lblName.id, 1);blank(lblName.id);" id="bt1" style="height:50px;  width:50px" color="accent" mat-raised-button>
+        <ng-container>
+            <p>
+                <label #lblName id="lblName1">
+        
+                </label>
+            </p>
+        </ng-container>
+    </button>
+    <button type="submit" (click)="randomText2(lblName2.id, 1);blank(lblName2.id);" id="bt2" style="height:50px;  width:50px"color="accent" mat-raised-button>
+        <ng-container>
+            <p>
+                <label #lblName2 id="lblName2">
+        
+                </label>
+            </p>
+        </ng-container>
+    </button>
+    <button type="submit" (click)="randomText3(lblName3.id, 1);blank(lblName3.id);" id="bt3" style="height:50px;  width:50px" color="accent"mat-raised-button>
+        <ng-container>
+            <p>
+                <label #lblName3 id="lblName3">
+        
+                </label>
+            </p>
+        </ng-container>
+    </button>
+    <button type="submit" (click)="randomText4(lblName4.id, 1);blank(lblName4.id);" id="bt4"  style="height:50px;  width:50px"color="accent" mat-raised-button>
+        <ng-container>
+            <p>
+                <label #lblName4 id="lblName4">
+        
+                </label>
+            </p>
+        </ng-container>
+    </button>
+    <br>
+    <button type="submit" (click)="randomText5(lblName5.id, 1);blank(lblName5.id);" id="bt5" style="height:50px;  width:50px"color="accent" mat-raised-button>
+        <ng-container>
+            <p>
+                <label #lblName5 id="lblName5">
+        
+                </label>
+            </p>
+        </ng-container>
+    </button>
+    <button type="submit" (click)="randomText6(lblName6.id, 1);blank(lblName6.id);" id="bt6" style="height:50px;  width:50px"color="accent" mat-raised-button>
+        <ng-container>
+            <p>
+                <label #lblName6 id="lblName6">
+        
+                </label>
+            </p>
+        </ng-container>
+    </button>
+    <button type="submit" (click)="randomText7(lblName7.id, 1);blank(lblName7.id);" id="bt7" style="height:50px;  width:50px" color="accent"mat-raised-button>
+        <ng-container>
+            <p>
+                <label #lblName7 id="lblName7">
+        
+                </label>
+            </p>
+        </ng-container>
+    </button>
+    <button type="submit" (click)="randomText8(lblName8.id, 1);blank(lblName8.id);" id="bt8" style="height:50px;  width:50px"color="accent" mat-raised-button>
+        <ng-container>
+            <p>
+                <label #lblName8 id="lblName8">
+        
+                </label>
+            </p>
+        </ng-container>
+    </button>
+    <br>
+    <button id="start" type="submit" (click)="startWord();randomText1(lblName.id, 1);randomText2(lblName2.id, 1);randomText3(lblName3.id, 1);
+    randomText4(lblName4.id, 1);randomText5(lblName5.id, 1);randomText6(lblName6.id, 1);randomText7(lblName7.id, 1);randomText8(lblName8.id, 1)"  mat-raised-button>
+        Start
+    </button>
+    <button id="pass" type="submit" (click)="onPass();randomText1(lblName.id, 1);randomText2(lblName2.id, 1);randomText3(lblName3.id, 1);
+    randomText4(lblName4.id, 1);randomText5(lblName5.id, 1);randomText6(lblName6.id, 1);randomText7(lblName7.id, 1);randomText8(lblName8.id, 1);clear()"  mat-raised-button>
+        Pass
+    </button>    
+ </mat-card>
+<mat-card>
+<button id="tripleword" mat-raised-button style="background-color: rgb(219, 58, 58)">Triple Word</button>
+<button id="tripleletter" mat-raised-button style="background-color:skyblue ">Triple Letter</button>
+<button id="doubleword" mat-raised-button style="background-color: rgb(30, 97, 124)">Double Word</button>
+<button id="doubleletter" mat-raised-button style="background-color:springgreen ">Double Letter</button>
+<button id="rules" mat-raised-button style="background-color:silver">Rules</button>
+<button id="currentword" mat-raised-button style="background-color:silver">{{word}}</button>
+<button id="currentscore" mat-raised-button style="background-color:silver">{{mainscore}}</button>
+<button id="currentscore" mat-raised-button style="background-color:silver" (click)=allRules()>Rules</button>
+</mat-card>         
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center">
+        <h1>
+          Angular Toastr:
+        </h1>
+      </div>
+      <button (click) = "showSuccess()">Oprn Angular Toastr Success</button>
+      <br/><br/>
+      <button (click) = "showError()">Oprn Angular Toastr Error</button> -->
+</mat-card> 
+
+</html>

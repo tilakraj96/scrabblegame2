@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'GameFont';
+    src:url('C:\Project\ScrabbleHome\gamecuben.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  }
+
+#main {
+    background-image: url(scrabble-words1-medium11.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%
+  }
+#htp{
+    margin: 150px  70px  150px 70px;
+    font-size: 30px;
+    padding: 10px;
+    font-family:'GameFont';
+}
+
+#login{
+    margin: 150px 70px 150px 70px;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'GameFont'
+    
+}
+
+#signup{
+    margin: 150px 70px 150px 70px;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'GameFont'
+}
+
+#About{
+    margin: 150px 70px 150px 70px;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'GameFont'
+}
+
+
+#scrabble{
+    font-family:'GameFont';   
+    color:rgb(48, 3, 3);
+    font-size: 4rem;
+    text-align: justify;
+    
+}

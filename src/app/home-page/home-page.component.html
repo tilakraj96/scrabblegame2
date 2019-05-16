@@ -1,0 +1,45 @@
+
+<!-- <mat-card id="gamestart">
+  <button mat-raised-button id="creategame">Create Game</button>
+  <br>
+  <button mat-stroked-button id="joingame">Join Game</button>
+</mat-card>  -->
+
+<mat-sidenav-container>
+    <mat-sidenav mode="over" [(opened)]="opened">
+      <br>
+      <div>
+        <button id="htp"  mat-raised-button (click)="onHtp()">
+            How to play
+        </button>        
+        </div>
+        <br>
+        <div>
+        <button id="about" mat-raised-button (click)="onAbout()">
+              About
+        </button>
+      </div>
+    </mat-sidenav>  
+    <mat-sidenav-content>
+        <mat-toolbar color="warn" class="navbar">
+            <button id="title1" (click)="opened=!opened" mat-stroked-button>Scrabble 1.0</button>
+            <div >
+                <button id="login"color="accent" mat-raised-button (click)="onLogin()">
+                    Login
+                </button>
+            </div>
+            <div > 
+                <button id="signup" mat-raised-button (click)="onSignup()"> 
+                    Sign up
+                </button>
+            </div>
+          </mat-toolbar>
+    
+    <mat-card id="gamestart">
+        <button mat-raised-button id="creategame">Create Game</button>
+        <br>
+        <button mat-stroked-button id="joingame">Join Game</button>
+      </mat-card> 
+     </mat-sidenav-content>
+     
+</mat-sidenav-container>
